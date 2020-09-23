@@ -50,48 +50,12 @@
 
     <section class="jumbotron text-center">
       <div class="container">
-        <h1 class="jumbotron-heading">Photo upload</h1>
-        <p class="lead text-muted">Use this form to upload your photo's to the album.</p>
         <p>
-        <form method="post" action="/upload" enctype="multipart/form-data">
-          <div class="form-group">
-            <input type="title" class="form-control" placeholder="Title" name="title">
-          </div>
-          <textarea class="form-control" name="comments" rows="3" placeholder="Comments"></textarea><br>
-          <div class="form-group">
-            <input type="file" name="photo">
-            <input class="btn btn-primary my-2" type="submit" value="Upload">
-          </div>
-        </form>
+          <h4>New photo added...</h4><br>
+          <a href="/" class="btn btn-secondary my-2">Back to home page</a>
         </p>
       </div>
     </section>
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-
-        {% for photo in album_photos %}
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>{{ photo['title'] }}</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">{{ photo['title'] }}</text></svg>
-              <div class="card-body">
-                <p class="card-text">{{ photo['comments'] }}</p>
-                <div class="d-flex justify-content-between align-items-center">
-                </div>
-              </div>
-            </div>
-          </div>
-
-        {% endfor %}
-
-        </div>
-      </div>
-    </div>
-
-
 
   </main>
 
