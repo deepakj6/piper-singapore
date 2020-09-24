@@ -1,8 +1,0 @@
----
-applications:
-- name: photo-album-dj
-  memory: 64M
-  instances: 1
-  random-route: true
-  buildpacks:
-  - https://github.com/cloudfoundry/python-buildpack.git
