@@ -1,5 +1,5 @@
 # Use an official Python container as a parent image
-FROM python:3
+FROM python:3 
 
 # Set the working directory to /usr/src/app
 WORKDIR /usr/src/app
